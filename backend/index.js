@@ -6,6 +6,7 @@ const axios = require('axios');
 
 const app = express();
 app.use(cors({
+  origin: 'https://github-trackerrr.vercel.app',
   exposedHeaders: ['X-Cache'],
 }));
 app.use(express.json());
