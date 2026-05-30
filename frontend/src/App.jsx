@@ -48,7 +48,7 @@ function App() {
     setCacheStatus(null)
 
     try {
-      const res = await fetch(`http://localhost:5000/api/user/${username}`)
+      const res = await fetch(`https://github-tracker-8hzx.onrender.com/api/user/${username}`)
       if (!res.ok) {
         const err = await res.json()
         throw new Error(err.error || 'Something went wrong')
@@ -78,7 +78,7 @@ function App() {
     setCacheStatus(null)
 
     try {
-      const res = await fetch(`http://localhost:5000/api/compare/${username}/${username2}`)
+      const res = await fetch(`https://github-tracker-8hzx.onrender.com/api/compare/${username}/${username2}`)
       if (!res.ok) {
         const err = await res.json()
         throw new Error(err.error || 'Something went wrong')
